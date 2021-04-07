@@ -2,13 +2,10 @@
 title: Home
 sections:
   - type: hero_section
-    title: Achieve your Goals!
-    subtitle: Celebrating daily wins with YourGoal.
-    actions:
-      - label: Try for free
-        url: /pricing
-        style: primary
-    image: images/hero.svg
+    title: The Challenge
+    subtitle: How might we enable seamsless inflight digital ordering using passenger's and crew's existing mobile devices without the need for air-to-ground connectivity?
+    image: images/wind.svg
+    
     image_alt: Hero section placeholder image
     media_position: bottom
     align: center
@@ -38,6 +35,39 @@ sections:
     padding_top: small
     padding_bottom: medium
     background_color: none
+  -type: section_contact
+    background: gray
+    title: Contact
+    content: >-
+
+    form_id: contactForm
+    form_fields:
+      - input_type: text
+        name: name
+        label: Name
+        is_required: true
+      - input_type: email
+        name: email
+        label: Email
+        is_required: true
+      - input_type: select
+        name: subject
+        label: Subject
+        default_value: Please select
+        options:
+          - Error on the site
+          - Sponsorship
+          - Other
+      - input_type: textarea
+        name: message
+        label: Message
+      - input_type: checkbox
+        name: consent
+        label: >-
+          I understand that this form is storing my submitted information so I
+          can be contacted.
+        is_required: true
+    submit_label: Submit
   - type: features_section
     title: Why Choose YourGoal?
     features:
